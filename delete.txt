@@ -1,0 +1,30 @@
+<section class="form-container">
+                    <form>
+                        <label for="name">Meno:</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="surname">Priezvisko:</label>
+                        <input type="text" name="surname" id="surname" required>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="phone">Tel. číslo:</label>
+                        <input type="text" name="phone" id="phone" required>
+                        <label for="note">Poznámka:</label>
+                        <textarea name="note" id="note"></textarea>
+                    </form>
+                </section>
+                <section class="more-contact-info">
+                    <div class="more-info-container">
+                        <a href="tel:+421907223526" class="direct-number">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+421 907 223 526</p>
+                        </a>
+                        <a href="mailto:Harmony.Oasis.Marko@gmail.com" class="direct-email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>Harmony.Oasis.Marko@gmail.com</p>
+                        </a>
+                        <a target="_blank" href="https://www.google.com/maps/place/Podhora+1330%2F48,+034+01+Ru%C5%BEomberok/@49.07949,19.3022474,17z/data=!3m1!4b1!4m6!3m5!1s0x4715a7c853a98e29:0xcc40ac3e2ab5fa3b!8m2!3d49.0794865!4d19.3048277!16s%2Fg%2F11c2652qlx?hl=pl-PL&entry=ttu" class="direct-adress">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Podhora 48, Ruzomberok</p>
+                        </a>
+                    </div>
+                </section>

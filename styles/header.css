@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+header{
+    min-height: 25vh;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-section a img{
+    width: 130px;
+    margin-left: 80px;
+}
+.logo-section .fa-bars{
+    display: none;
+}
+.nav-list ul{
+    display: flex;
+    margin-right: 80px;
+}
+.nav-list ul li {
+    margin-right: 35px;
+    font-family: "Poppins", sans-serif;
+}
+.nav-list ul li a{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    color: #90723c;
+    cursor: pointer;
+}
+.nav-list ul li a:before,
+.nav-list ul li a:after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    background: #90723c;
+}
+.nav-list ul li a:before{
+    left: 0; 
+}
+.nav-list ul li a:after{
+    right: 0;
+    background: #90723c;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.nav-list ul li a:hover:before {
+    background: #90723c;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.nav-list ul li a:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
+
+

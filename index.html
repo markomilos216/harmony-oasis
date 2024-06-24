@@ -1,11 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/6d664e133f.js" crossorigin="anonymous"></script>
+    <link rel="website icon" type="svg" href="images/logo.svg">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <title>Harmony&Oasis</title>
 </head>
 <body>
-    
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Harmony & Oasis Logo">
+                </a>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="nav-list">
+                <ul>
+                    <li><a href="#">Ponuka masáží</a></li>
+                    <li><a href="#">Cenník</a></li>
+                    <li><a href="#contact-section">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="home-banner">
+            <aside class="left-side-banner">
+                <h1 class="main-heading">Masérske služby</h1>
+                <h1 class="main-heading company-name">Harmony & Oasis</h1>
+            </aside>
+            <aside class="right-side-banner">
+                <img src="images/banner-image.svg" alt="main-banner">
+            </aside>
+        </section>
+        <div class="border-line"></div>
+        <section class="offer-section">
+            <h2 class="offer-section-heading">Ponuka masáží</h2>
+            <div class="offer-section-container">
+                <div class="offer-box">
+                    <img src="images/essencial-oils.svg" alt="essencial-oils">
+                    <h3>Aromaterapia</h3>
+                    <p>Aromaterapia zahŕňa používanie esenciálnych olejov a iných prírodných aromatických látok pre fyzickú, psychickú a duševnú pohodu.</p>
+                </div>
+                <div class="offer-box">
+                    <img src="images/chocolate-massage.svg" alt="chocolate-massage">
+                    <h3>Čokoládová masáž</h3>
+                    <p>Čokoládová masáž nielen vyhladzuje, omladzuje a skrášľuje pokožku celého tela, ale taktiež výborne pôsobí na psychiku a zlepšuje náladu.</p>
+                </div>
+                <div class="offer-box">
+                    <img src="images/relax-massage.svg" alt="relax-massage">
+                    <h3>Relaxačná masáž</h3>
+                    <p>Ide o dotyky, trenie, systematické hladenie a tlaky, ktoré sú aplikované plynule po celom tele.</p>
+                </div>
+            </div>
+            <div class="offer-link-button-container">
+                <a href="#" class="offer-link-button">Ponuka masáží</a>
+            </div>
+        </section>
+        <article class="quote-banner-container">
+            <div class="banner-box">
+                <asdie class="left-side-contact">
+                    <img src="images/left-side-form-img.svg" alt="Harmony Oasis form">
+                </asdie>
+                <aside class="right-side-quote">
+                    <h2 class="quote">„Masáž nie je len luxus, je to cesta k uzdraveniu a relaxácii.“</h2>
+                </aside>
+            </div>
+        </article>
+        <div class="border-line"></div>
+        <section class="contact-section" id="contact-section">
+            <h2 class="contact-section-heading">Kontakt</h2>
+            <div class="contact-section-box">
+                <section class="form-container">
+                    <form>
+                        <label for="name" class="required">Meno:</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="surname" class="required">Priezvisko:</label>
+                        <input type="text" name="surname" id="surname" required>
+                        <label for="email" class="required">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="phone" class="required">Tel. číslo:</label>
+                        <input type="text" name="phone" id="phone" required>
+                        <label for="note">Poznámka:</label>
+                        <textarea name="note" id="note"></textarea>
+                        <button id="send-order">Odoslať</button>
+                    </form>
+                </section>
+                <section class="more-contact-info">
+                    <div class="more-info-container">
+                        <a href="tel:+421907223526" class="direct-number contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+421 907 223 526</p>
+                        </a>
+                        <a href="mailto:Harmony.Oasis.Marko@gmail.com" class="direct-email contact">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>Harmony.Oasis.Marko@gmail.com</p>
+                        </a>
+                        <a target="_blank" href="https://www.google.com/maps/place/Podhora+1330%2F48,+034+01+Ru%C5%BEomberok/@49.07949,19.3022474,17z/data=!3m1!4b1!4m6!3m5!1s0x4715a7c853a98e29:0xcc40ac3e2ab5fa3b!8m2!3d49.0794865!4d19.3048277!16s%2Fg%2F11c2652qlx?hl=pl-PL&entry=ttu" class="direct-adress contact">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Podhora 48, Ruzomberok</p>
+                        </a>
+                    </div>
+                    <img src="images/contact-img-boxes.svg" alt="contact-image" class="contact-image"> 
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p class="copyright">&copy; Harmony&Oasis 2024</p>
+            <section class="social-icons">
+                <ul class="social-icons-list">
+                    <li><a href="https://www.facebook.com/profile.php?id=61554728084611"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/harmony_oasis_/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
 </body>
 </html>

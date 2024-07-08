@@ -26,3 +26,16 @@ footer{
 .footer-container .social-icons-list i{
     color: #fff;
 }
+
+@media screen and (max-width: 760px) {
+    .footer-container{
+        align-items: center;
+        min-height: 150px;
+    }
+    .footer-container .copyright{
+        font-size: 10px;
+    }
+    .footer-container .social-icons-list{
+        font-size: 20px;
+    }
+}

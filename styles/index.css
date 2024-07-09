@@ -225,7 +225,7 @@ main{
 
 @media screen and (max-width: 760px){
     .home-banner{
-        background-image: url('../images/banner-image.svg');
+        background-image: url('../images/banner-image.png');
         background-size: cover;
         background-position: center;
         min-height: 85vh;
@@ -280,6 +280,7 @@ main{
     .contact-image{
         width: 100%;
         position: relative;
+        z-index: -1;
         top: -65px;
     }
 }

@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "title": "Klasická masáž",
+        "description": "Prináša hĺbkové uvoľnenie, odstraňuje únavu, preťaženosť, svalové kŕče, obnovuje pohyblivosť stuhnutých a bolestivých svalov.",
+        "img": "../images/massagesOfferImgs/classic-massage.png",
+        "altDescription": "classic-massage",
+        "subpageLink": ""
+    },
+    {
+        "id": 2,
+        "title": "Relaxačná masáž",
+        "description": "Ide o dotyky, trenie, systematické hladenie a tlaky, ktoré sú aplikované plynule po celom tele.",
+        "img": "../images/relax-massage.png",
+        "altDescription": "relax-massage",
+        "subpageLink": ""
+    },
+    {
+        "id": 3,
+        "title": "Športová masáž",
+        "description": "Veľmi podobná klasickej masáži, je však prispôsobená špeciálne pre športovcov a osoby, ktoré podávajú zložitejšie fyzické výkony.",
+        "img": "../images/massagesOfferImgs/sport-massage.png",
+        "altDescription": "sport-massage",
+        "subpageLink": ""
+    },
+    {
+        "id": 4,
+        "title": "Maderoterapia",
+        "description": "Masážna technika s cieľom tvarovať postavu, za pomoci aplikácie drevených zvonov rôznych veľkosti.",
+        "img": "../images/massagesOfferImgs/madero-therapy.png",
+        "altDescription": "maderotherapy",
+        "subpageLink": ""
+    },
+    {
+        "id": 5,
+        "title": "Manuálna lymfodrenáž",
+        "description": "Lymfodrenáž je liečebná a regeneračná metóda, ktorá využíva súbor jemných hmatov.",
+        "img": "../images/massagesOfferImgs/manual-lymfo.png",
+        "altDescription": "manual-lymphatic-drainage",
+        "subpageLink": ""
+    },
+    {
+        "id": 6,
+        "title": "Reflexná masáž chodidiel",
+        "description": "Reflexná masáž sa zameriava na priame ovplyvňovanie reflexných zón, aby nepriamo ovplyvňovali vnútorné orgány.",
+        "img": "../images/massagesOfferImgs/foot-massage.png",
+        "altDescription": "relaxing-foot-massage",
+        "subpageLink": ""
+    },
+    {
+        "id": 7,
+        "title": "Čokoládová masáž",
+        "description": "Čokoládová masáž nielen vyhladzuje, omladzuje a skrášľuje pokožku celého tela, ale taktiež výborne pôsobí na psychiku a zlepšuje náladu.",
+        "img": "../images/chocolate-massage.png",
+        "altDescription": "chocolate-massage",
+        "subpageLink": ""
+    },
+    {
+        "id": 8,
+        "title": "Pivná chmelová masáž",
+        "description": "Pivné masáže majú liečivé účinky,uvoľňujú svalové napätie, zahrievajú kĺby a podporujú imunitný systém.",
+        "img": "../images/massagesOfferImgs/hops-massage.png",
+        "altDescription": "hops-massage",
+        "subpageLink": ""
+    },
+    {
+        "id": 9,
+        "title": "Bankovanie",
+        "description": "Priaznivo ovplyvňuje kožu, podkožie, svaly, šľachy, cievny systém a centrálny nervový systém.",
+        "img": "../images/massagesOfferImgs/cupping.png",
+        "altDescription": "cupping",
+        "subpageLink": ""
+    },
+    {
+        "id": 10,
+        "title": "Rašelinový zábal",
+        "description": "Svojim zložením podporuje prekrvenie ošetrovaného miesta, uvoľňuje unavené a napäté svalstvo, regeneruje ho a zlepšuje jeho činnosť.",
+        "img": "../images/massagesOfferImgs/peat-wrap.png",
+        "altDescription": "peat-wrap",
+        "subpageLink": ""
+    },
+    {
+        "id": 11,
+        "title": "Aromaterapia",
+        "description": "Aromaterapia zahŕňa používanie esenciálnych olejov a iných prírodných aromatických látok pre fyzickú, psychickú a duševnú pohodu.",
+        "img": "../images/essencial-oils.png",
+        "altDescription": "aromatherapy",
+        "subpageLink": ""
+    }
+]

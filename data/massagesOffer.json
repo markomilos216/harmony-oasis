@@ -5,7 +5,7 @@
         "description": "Prináša hĺbkové uvoľnenie, odstraňuje únavu, preťaženosť, svalové kŕče, obnovuje pohyblivosť stuhnutých a bolestivých svalov.",
         "img": "../images/massagesOfferImgs/classic-massage.png",
         "altDescription": "classic-massage",
-        "subpageLink": ""
+        "subpageLink": "./subpages/classicMassage.html"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "description": "Ide o dotyky, trenie, systematické hladenie a tlaky, ktoré sú aplikované plynule po celom tele.",
         "img": "../images/relax-massage.png",
         "altDescription": "relax-massage",
-        "subpageLink": ""
+        "subpageLink": "./subpages/relaxingMassage.html"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "description": "Veľmi podobná klasickej masáži, je však prispôsobená špeciálne pre športovcov a osoby, ktoré podávajú zložitejšie fyzické výkony.",
         "img": "../images/massagesOfferImgs/sport-massage.png",
         "altDescription": "sport-massage",
-        "subpageLink": ""
+        "subpageLink": "./subpages/sportMassage.html"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "description": "Masážna technika s cieľom tvarovať postavu, za pomoci aplikácie drevených zvonov rôznych veľkosti.",
         "img": "../images/massagesOfferImgs/madero-therapy.png",
         "altDescription": "maderotherapy",
-        "subpageLink": ""
+        "subpageLink": "./subpages/maderotherapy.html"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "description": "Lymfodrenáž je liečebná a regeneračná metóda, ktorá využíva súbor jemných hmatov.",
         "img": "../images/massagesOfferImgs/manual-lymfo.png",
         "altDescription": "manual-lymphatic-drainage",
-        "subpageLink": ""
+        "subpageLink": "./subpages/manualLympho.html"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "description": "Reflexná masáž sa zameriava na priame ovplyvňovanie reflexných zón, aby nepriamo ovplyvňovali vnútorné orgány.",
         "img": "../images/massagesOfferImgs/foot-massage.png",
         "altDescription": "relaxing-foot-massage",
-        "subpageLink": ""
+        "subpageLink": "./subpages/footMassage.html"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "description": "Čokoládová masáž nielen vyhladzuje, omladzuje a skrášľuje pokožku celého tela, ale taktiež výborne pôsobí na psychiku a zlepšuje náladu.",
         "img": "../images/chocolate-massage.png",
         "altDescription": "chocolate-massage",
-        "subpageLink": ""
+        "subpageLink": "./subpages/chocolateMassage.html"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "description": "Pivné masáže majú liečivé účinky,uvoľňujú svalové napätie, zahrievajú kĺby a podporujú imunitný systém.",
         "img": "../images/massagesOfferImgs/hops-massage.png",
         "altDescription": "hops-massage",
-        "subpageLink": ""
+        "subpageLink": "./subpages/hopsMassage.html"
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "description": "Priaznivo ovplyvňuje kožu, podkožie, svaly, šľachy, cievny systém a centrálny nervový systém.",
         "img": "../images/massagesOfferImgs/cupping.png",
         "altDescription": "cupping",
-        "subpageLink": ""
+        "subpageLink": "./subpages/cupping.html"
     },
     {
         "id": 10,
@@ -77,7 +77,7 @@
         "description": "Svojim zložením podporuje prekrvenie ošetrovaného miesta, uvoľňuje unavené a napäté svalstvo, regeneruje ho a zlepšuje jeho činnosť.",
         "img": "../images/massagesOfferImgs/peat-wrap.png",
         "altDescription": "peat-wrap",
-        "subpageLink": ""
+        "subpageLink": "./subpages/peatWrap.html"
     },
     {
         "id": 11,
@@ -85,6 +85,6 @@
         "description": "Aromaterapia zahŕňa používanie esenciálnych olejov a iných prírodných aromatických látok pre fyzickú, psychickú a duševnú pohodu.",
         "img": "../images/essencial-oils.png",
         "altDescription": "aromatherapy",
-        "subpageLink": ""
+        "subpageLink": "./subpages/aromatherapy.html"
     }
 ]

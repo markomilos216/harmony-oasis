@@ -23,6 +23,7 @@ footer{
     display: flex;
     gap: 15px;
     font-size: 32px;
+    list-style: none;
 }
 .footer-container .social-icons-list i{
     color: #fff;

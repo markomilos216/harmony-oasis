@@ -8,7 +8,7 @@ const printMassagesOffer = (allMessages) => {
     allMessages.forEach(({title, description, img, altDescription, subpageLink}) => {
         offerSectionContainer.innerHTML += `
             <a href="${subpageLink}" class="offer-link-container">
-                <img src="${img}" alt="${altDescription}" loading="lazy">
+                <img src="${img}" alt="${altDescription}">
                 <h3>${title}</h3>
                 <p>${description}</p>
             </a>

@@ -81,15 +81,20 @@
                 <section class="form-container">
                     <form>
                         <label for="name" class="required">Meno:</label>
-                        <input type="text" name="name" id="name" required>
+                        <input type="text" name="name" id="name">
+                        <span class="name-warning"></span>
                         <label for="surname" class="required">Priezvisko:</label>
-                        <input type="text" name="surname" id="surname" required>
+                        <input type="text" name="surname" id="surname">
+                        <span class="surname-warning"></span>
                         <label for="email" class="required">Email:</label>
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" name="email" id="email">
+                        <span class="email-warning"></span>
                         <label for="phone" class="required">Tel. číslo:</label>
-                        <input type="text" name="phone" id="phone" required>
-                        <label for="note">Poznámka:</label>
+                        <input type="text" name="phone" id="phone">
+                        <span class="phone-warning"></span>
+                        <label for="note" class="required">Poznámka:</label>
                         <textarea name="note" id="note"></textarea>
+                        <span class="note-warning"></span>
                         <button id="send-order">Odoslať</button>
                     </form>
                 </section>
@@ -103,7 +108,7 @@
                             <i class="fa-solid fa-envelope"></i>
                             <p>Harmony.Oasis.Marko@gmail.com</p>
                         </a>
-                        <a target="_blank" href="https://www.google.com/maps/place/Podhora+1330%2F48,+034+01+Ru%C5%BEomberok/@49.07949,19.3022474,17z/data=!3m1!4b1!4m6!3m5!1s0x4715a7c853a98e29:0xcc40ac3e2ab5fa3b!8m2!3d49.0794865!4d19.3048277!16s%2Fg%2F11c2652qlx?hl=pl-PL&entry=ttu" class="direct-adress contact">
+                        <a target="_blank" href="https://www.google.sk/maps/place/Harmony%26Oasis/@49.0794874,19.304184,19z/data=!4m16!1m9!3m8!1s0x4715a794eef89b9f:0x47cd1c4f47c92ad!2sHarmony%26Oasis!8m2!3d49.0794865!4d19.3048277!9m1!1b1!16s%2Fg%2F11v_9wbghl!3m5!1s0x4715a794eef89b9f:0x47cd1c4f47c92ad!8m2!3d49.0794865!4d19.3048277!16s%2Fg%2F11v_9wbghl?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D" class="direct-adress contact">
                             <i class="fa-solid fa-location-dot"></i>
                             <p>Podhora 48, Ružomberok</p>
                         </a>
@@ -120,7 +125,6 @@
                 <ul class="social-icons-list">
                     <li><a href="https://www.facebook.com/profile.php?id=61554728084611"><i class="fa-brands fa-facebook"></i></a></li>
                     <li><a href="https://www.instagram.com/harmony_oasis_/"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                 </ul>
             </section>
         </div>

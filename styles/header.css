@@ -6,10 +6,16 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
+a:focus,
+button:focus{
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
 .header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 15vh;    
 }
 .logo-section{
     display: flex;
@@ -113,7 +119,7 @@
         overflow: hidden;
         transition: all linear 0.2s;
         position: absolute;
-        top: 95px;
+        top: 100px;
         background-color: #90723c;
         z-index: 10;
     }
@@ -122,7 +128,7 @@
         transition: all linear 0.2s;
         overflow: hidden;
         position: absolute;
-        top: 95px;
+        top: 100px;
         background-color: #90723c;
         z-index: 10;
     }

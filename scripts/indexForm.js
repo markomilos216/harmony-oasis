@@ -1,10 +1,61 @@
-const name = document.getElementById('name');
-const surname = document.getElementById('surname');
-const email = document.getElementById('email');
-const phone = document.getElementById('phone');
-const note = document.getElementById('note');
-const sendBtn = document.getElementById('send-order');
+const allInputs = document.querySelectorAll('input')
+const allSpanElementsFromForm = document.querySelectorAll('span')
+const name = document.getElementById('name')
+const surname = document.getElementById('surname')
+const email = document.getElementById('email')
+const phone = document.getElementById('phone')
+const note = document.getElementById('note')
+const sendBtn = document.getElementById('send-order')
+const regexNumber = /\d/
+const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+const regexPhoneNumber = /^\+421\s?\d{3}\s?\d{3}\s?\d{3}$|^0\d{3}\s?\d{3}\s?\d{3}$/
+let isFormCorrect
+
+
+const areAllFieldsFilledCorrectly = () => {
+    const spanForNote = document.querySelector('.note-warning')
+    isFormCorrect = true
+    allInputs.forEach((input) => {
+        let inputId = input.getAttribute('id')
+        let currentWarningFormSpan = document.querySelector(`.${inputId}-warning`)
+        if(!input.value){
+            currentWarningFormSpan.textContent = "Vyplňte prosim toto pole"
+            input.style.border = "1px solid red"
+            isFormCorrect = false
+        }else if((inputId === 'name' || inputId === 'surname') && regexNumber.test(input.value)){
+            currentWarningFormSpan.textContent = "Toto pole musí obsahovať iba písmená"
+            input.style.border = "1px solid black"
+            isFormCorrect = false
+        }else if(inputId === 'email' && !regexEmail.test(email.value)){
+            currentWarningFormSpan.textContent = "Zadaná emailová adresa nie je platná"
+            input.style.border = "1px solid black"
+            isFormCorrect = false
+        }else if(inputId === 'phone' && !regexPhoneNumber.test(phone.value)){
+            currentWarningFormSpan.textContent = "Neplatné telefónne číslo"
+            input.style.border = "1px solid black"
+            isFormCorrect = false
+        }else{
+            currentWarningFormSpan.textContent = ""
+            input.style.border = "1px solid black"
+        }
+    })
+    
+    if(!note.value){
+        spanForNote.textContent = "Vyplňte prosim toto pole"
+        note.style.border = "1px solid red"
+        isFormCorrect = false
+    }else{
+        spanForNote.textContent = ""
+        note.style.border = "1px solid black"
+    }
+}
 
 sendBtn.addEventListener('click', (e) => {
-    e.preventDefault();
+    e.preventDefault()
+    areAllFieldsFilledCorrectly()
+    if(isFormCorrect){
+        
+    }
 })
+
+

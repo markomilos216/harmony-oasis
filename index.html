@@ -44,17 +44,17 @@
         <section class="offer-section">
             <h2 class="offer-section-heading hidden-offer">Ponuka masáží</h2>
             <div class="offer-section-container">
-                <a href="#" class="offer-box hidden-offer">
+                <a href="./pages/subpages/aromaTherapy.html" class="offer-box hidden-offer">
                     <img src="images/essencial-oils.png" alt="essencial-oils">
                     <h3>Aromaterapia</h3>
                     <p>Aromaterapia zahŕňa používanie esenciálnych olejov a iných prírodných aromatických látok pre fyzickú, psychickú a duševnú pohodu.</p>
                 </a>
-                <a href="#" class="offer-box hidden-offer">
+                <a href="./pages/subpages/chocolateMassage.html" class="offer-box hidden-offer">
                     <img src="images/chocolate-massage.png" alt="chocolate-massage">
                     <h3>Čokoládová masáž</h3>
                     <p>Čokoládová masáž nielen vyhladzuje, omladzuje a skrášľuje pokožku celého tela, ale taktiež výborne pôsobí na psychiku a zlepšuje náladu.</p>
                 </a>
-                <a href="#" class="offer-box hidden-offer">
+                <a href="./pages/subpages/relaxingMassage.html" class="offer-box hidden-offer">
                     <img src="images/relax-massage.png" alt="relax-massage">
                     <h3>Relaxačná masáž</h3>
                     <p>Ide o dotyky, trenie, systematické hladenie a tlaky, ktoré sú aplikované plynule po celom tele.</p>
@@ -79,7 +79,8 @@
             <h2 class="contact-section-heading">Kontakt</h2>
             <div class="contact-section-box">
                 <section class="form-container">
-                    <form>
+                    <form method="POST" id="form">
+                        <input type="hidden" name="access_key" value="cdf362a0-0913-46f3-8bf9-94c184f07dca">
                         <label for="name" class="required">Meno:</label>
                         <input type="text" name="name" id="name">
                         <span class="name-warning"></span>
@@ -96,6 +97,7 @@
                         <textarea name="note" id="note"></textarea>
                         <span class="note-warning"></span>
                         <button id="send-order">Odoslať</button>
+                        <div id="result"></div>
                     </form>
                 </section>
                 <section class="more-contact-info">

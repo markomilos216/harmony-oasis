@@ -1,3 +1,5 @@
+const form = document.getElementById('form');
+const result = document.getElementById('result');
 const allInputs = document.querySelectorAll('input')
 const allSpanElementsFromForm = document.querySelectorAll('span')
 const name = document.getElementById('name')
@@ -18,26 +20,29 @@ const areAllFieldsFilledCorrectly = () => {
     allInputs.forEach((input) => {
         let inputId = input.getAttribute('id')
         let currentWarningFormSpan = document.querySelector(`.${inputId}-warning`)
-        if(!input.value){
-            currentWarningFormSpan.textContent = "Vyplňte prosim toto pole"
-            input.style.border = "1px solid red"
-            isFormCorrect = false
-        }else if((inputId === 'name' || inputId === 'surname') && regexNumber.test(input.value)){
-            currentWarningFormSpan.textContent = "Toto pole musí obsahovať iba písmená"
-            input.style.border = "1px solid black"
-            isFormCorrect = false
-        }else if(inputId === 'email' && !regexEmail.test(email.value)){
-            currentWarningFormSpan.textContent = "Zadaná emailová adresa nie je platná"
-            input.style.border = "1px solid black"
-            isFormCorrect = false
-        }else if(inputId === 'phone' && !regexPhoneNumber.test(phone.value)){
-            currentWarningFormSpan.textContent = "Neplatné telefónne číslo"
-            input.style.border = "1px solid black"
-            isFormCorrect = false
-        }else{
-            currentWarningFormSpan.textContent = ""
-            input.style.border = "1px solid black"
+        if(currentWarningFormSpan){
+            if(!input.value){
+                currentWarningFormSpan.textContent = "Vyplňte prosim toto pole"
+                input.style.border = "1px solid red"
+                isFormCorrect = false
+            }else if((inputId === 'name' || inputId === 'surname') && regexNumber.test(input.value)){
+                currentWarningFormSpan.textContent = "Toto pole musí obsahovať iba písmená"
+                input.style.border = "1px solid black"
+                isFormCorrect = false
+            }else if(inputId === 'email' && !regexEmail.test(email.value)){
+                currentWarningFormSpan.textContent = "Zadaná emailová adresa nie je platná"
+                input.style.border = "1px solid black"
+                isFormCorrect = false
+            }else if(inputId === 'phone' && !regexPhoneNumber.test(phone.value)){
+                currentWarningFormSpan.textContent = "Neplatné telefónne číslo"
+                input.style.border = "1px solid black"
+                isFormCorrect = false
+            }else{
+                currentWarningFormSpan.textContent = ""
+                input.style.border = "1px solid black"
+            }
         }
+        
     })
     
     if(!note.value){
@@ -50,11 +55,46 @@ const areAllFieldsFilledCorrectly = () => {
     }
 }
 
+const sendFormDataToEmail = () => {
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    result.innerHTML = "Please wait..."
+
+    fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: json
+    }).then(async (response) => {
+        let json = await response.json();
+        if (response.status == 200) {
+            result.innerHTML = json.message;
+        } else {
+            console.log(response);
+            result.innerHTML = json.message;
+        }
+    })
+    .catch(error => {
+        console.log(error);
+        result.innerHTML = "Something went wrong!";
+    })
+    .then(function() {
+        form.reset();
+        setTimeout(() => {
+            result.style.display = "none";
+        }, 3000);
+    });
+}
+
 sendBtn.addEventListener('click', (e) => {
     e.preventDefault()
     areAllFieldsFilledCorrectly()
     if(isFormCorrect){
-        
+        sendFormDataToEmail()
     }
 })
 

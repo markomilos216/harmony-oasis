@@ -54,7 +54,7 @@ p{
     .content-box .massage-is-for,
     .content-box .massage-not-for{
         float: none;
-        max-width: 300px;
+        width: 100%;
         margin: 0;
         padding: 0;
     }

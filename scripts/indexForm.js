@@ -1,5 +1,5 @@
-const form = document.getElementById('form');
-const result = document.getElementById('result');
+const form = document.getElementById('form')
+const result = document.getElementById('result')
 const allInputs = document.querySelectorAll('input')
 const allSpanElementsFromForm = document.querySelectorAll('span')
 const name = document.getElementById('name')
@@ -8,6 +8,10 @@ const email = document.getElementById('email')
 const phone = document.getElementById('phone')
 const note = document.getElementById('note')
 const sendBtn = document.getElementById('send-order')
+const popUpWindow = document.querySelector('.popup-window')
+const statusCircle = document.querySelector('.status-circle')
+const popUpHeading = document.querySelector('.popup-heading')
+const popUpMessage = document.querySelector('.popup-message')
 const regexNumber = /\d/
 const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 const regexPhoneNumber = /^\+421\s?\d{3}\s?\d{3}\s?\d{3}$|^0\d{3}\s?\d{3}\s?\d{3}$/
@@ -60,7 +64,7 @@ const sendFormDataToEmail = () => {
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    result.innerHTML = "Please wait..."
+    //result.innerHTML = "Please wait..."
 
     fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -72,7 +76,7 @@ const sendFormDataToEmail = () => {
     }).then(async (response) => {
         let json = await response.json();
         if (response.status == 200) {
-            result.innerHTML = json.message;
+
         } else {
             console.log(response);
             result.innerHTML = json.message;
@@ -85,16 +89,40 @@ const sendFormDataToEmail = () => {
     .then(function() {
         form.reset();
         setTimeout(() => {
-            result.style.display = "none";
+            popUpWindow.classList.remove('open-popup')
         }, 3000);
     });
+}
+
+const openPopUpWindow = () => {
+    popUpWindow.classList.add('open-popup')
+}
+
+
+const popUpStyleForSucces = () => {
+    statusCircle.textContent = "✓"
+    popUpHeading.textContent = "Ďakujeme!"
+    popUpMessage.textContent = "Správa bola úspešne odoslaná."
+    statusCircle.style.backgroundColor = 'green'
+    popUpWindow.style.boxShadow = 'rgb(68, 150, 68) 0px 0px 13px'
+}
+
+const popUpStyleForFailure = () => {
+    statusCircle.textContent = "X"
+    popUpHeading.textContent = "Chyba!"
+    popUpMessage.textContent = "Správa nebola odoslaná. Skúste to prosím znovu."
+    statusCircle.style.backgroundColor = 'red'
+    popUpWindow.style.boxShadow = 'rgb(150, 68, 68) 0px 0px 13px'
 }
 
 sendBtn.addEventListener('click', (e) => {
     e.preventDefault()
     areAllFieldsFilledCorrectly()
+    popUpStyleForSucces()
+    //popUpStyleForFailure()
+    openPopUpWindow()
     if(isFormCorrect){
-        sendFormDataToEmail()
+        //sendFormDataToEmail()
     }
 })
 

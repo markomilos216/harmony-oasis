@@ -64,8 +64,6 @@ const sendFormDataToEmail = () => {
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    //result.innerHTML = "Please wait..."
-
     fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
@@ -76,28 +74,25 @@ const sendFormDataToEmail = () => {
     }).then(async (response) => {
         let json = await response.json();
         if (response.status == 200) {
-
+            popUpStyleForSucces()
+            popUpWindow.classList.add('open-popup')
         } else {
-            console.log(response);
-            result.innerHTML = json.message;
+            popUpStyleForFailure()
+            popUpWindow.classList.add('open-popup')
+            /* console.log(response);
+            result.innerHTML = json.message; */
         }
     })
     .catch(error => {
         console.log(error);
-        result.innerHTML = "Something went wrong!";
     })
-    .then(function() {
+    .then(() => {
         form.reset();
         setTimeout(() => {
             popUpWindow.classList.remove('open-popup')
         }, 3000);
     });
 }
-
-const openPopUpWindow = () => {
-    popUpWindow.classList.add('open-popup')
-}
-
 
 const popUpStyleForSucces = () => {
     statusCircle.textContent = "✓"
@@ -118,11 +113,8 @@ const popUpStyleForFailure = () => {
 sendBtn.addEventListener('click', (e) => {
     e.preventDefault()
     areAllFieldsFilledCorrectly()
-    popUpStyleForSucces()
-    //popUpStyleForFailure()
-    openPopUpWindow()
     if(isFormCorrect){
-        //sendFormDataToEmail()
+        sendFormDataToEmail()
     }
 })
 
